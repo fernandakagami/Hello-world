@@ -1,0 +1,53 @@
+@media (min-width:750px){
+	body{
+		background: white;
+	}
+	.responsive{
+		display:inline-block;
+		width:200px;
+		border:1px solid black;
+	}
+}
+
+@media (min-width:1000px){
+	body{
+		background: green;
+	}
+	.responsive{
+		display:inline-block;
+		width:5000px;
+		border:1px solid black;
+	}
+}
+
+a{
+	color:gray;
+	test-decoration: none;
+}
+
+a:hover{
+	color:black;
+	background: white;
+}
+
+.greenlink:hover{
+	color: green;
+	background: gray;
+}
+
+h1{
+	font-family: serif;
+	font-size: 50pt;
+}
+
+h2{
+	font-family: monospace;
+}
+
+.indent{
+	margin-left: 10px;
+}
+
+.gap_below{
+	margin-bottom:25px;
+}
