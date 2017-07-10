@@ -1,0 +1,9 @@
+#topo {
+  border-bottom: 1px solid white;
+  overflow: hidden;
+}
+
+#topo > img {
+  width: 15em;
+  left: 300px;
+}
