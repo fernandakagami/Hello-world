@@ -12,9 +12,9 @@ struct cadastro {
 
 int main (){
 	int i, busca, encontrou;
-	cadastro aluno[3];
+	cadastro aluno[10];
 			
-	for(i = 0; i < 3; i++){
+	for(i = 0; i < 10; i++){
 		
 		printf("\n Digite o codigo do aluno: ");
 		scanf("%d", &aluno[i].codigo);
@@ -35,7 +35,7 @@ int main (){
 	printf("\nInsira o codigo do aluno para acessar seus dados: ");
 	scanf("%d", &busca);
 	encontrou = 0;
-	for(i = 0; i < 3; i++){
+	for(i = 0; i < 10; i++){
 		if (busca == aluno[i].codigo) {
 			printf("Codigo = %d\n", aluno[i].codigo);
 			printf("Nome do aluno = %s\n", aluno[i].nome);
@@ -51,13 +51,13 @@ int main (){
 		printf("Codigo nao entrado.\n");	
 	}
 	
-	for(i = 0; i < 3; i++){
+	for(i = 0; i < 10; i++){
 		if(aluno[i].nota1 >= 6 || aluno[i].nota2 >= 6 || aluno[i].nota3 >= 6 || aluno[i].nota4 >= 6){
 			printf("O aluno %s tem notas iguais ou maiores do que 6.\n", aluno[i].nome);
 		}
 	}
 	
-	for(i = 0; i < 3; i++) {
+	for(i = 0; i < 10; i++) {
 		if(aluno[i].nota1 < 6 || aluno[i].nota2 < 6 || aluno[i].nota3 < 6 || aluno[i].nota4 < 6){
 			printf("O aluno %s tem notas menores do que 6.\n", aluno[i].nome);
 		}
