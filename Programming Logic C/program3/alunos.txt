@@ -1,0 +1,10 @@
+001 10 10 10 10 Aluno   da    Silva
+002 10 08 07 06 Aluno   das  Flores
+003 09 08 07 06 Aluno    de   Souza
+004 10 09 08 07 Michael   Shulmaker
+005 06 06 06 06 Rubinho Barrichello
+006 00 01 02 03 Tiririca do  Brasil
+007 09 08 07 06 Luke Jedi Skywalker
+008 00 00 00 00 Jon Snow(know nothing)
+009 07 07 07 07 Aria Malvada  Stark
+010 08 08 07 06 Sansa  Sonsa  Stark
