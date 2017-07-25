@@ -1,0 +1,79 @@
+header {
+  background: linear-gradient(#ccff33, #ffcc00);
+  padding: 8px 0;
+}
+
+header > h1 {
+  margin-left: 40px;
+  font-size: 45px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px black;
+  color:  white;
+  font-weight: bold;
+}
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 22px;
+  font-style: italic;
+  border-bottom: 5px solid yellow;
+  margin : 0 20px;
+}
+
+nav > a {
+  padding-left: 10px;
+}
+
+figure {
+  text-align: center;
+  margin: 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid yellow;
+}
+
+figure > img {
+  width: 100%;
+}
+
+main > article {
+  margin: 5px;
+}
+
+main > article > h2 {
+  padding: 7px 25px;
+  font-size: 40px;
+  font-style: italic;
+}
+
+main > article > p {
+  padding: 5px 15px;
+  font-size: 25px;
+}
+
+ol {
+  list-style: decimal inside;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+footer {
+  background: linear-gradient(#ffcc00,#ccff33);
+  padding: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+blockquote {
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 5px gray;
+}
+
+address {
+  margin-bottom: 2px;
+}
