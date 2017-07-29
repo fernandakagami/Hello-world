@@ -1,0 +1,88 @@
+.largura {
+	width: 750px;
+	margin: auto;
+}
+
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	font-style: italic;
+	font-family: sans-serif;
+	padding: 17px 0;
+}
+
+
+.menu {
+	padding: 10px 0;
+	background: blue;
+	color: white;
+	font-size: 1em;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+nav a {
+	padding-right: 30px;
+}
+
+.destaque {
+	text-transform: uppercase;
+}
+
+div > nav {
+	text-transform: uppercase;
+	text-decoration: underline;
+	margin: 0.8em 0;
+}
+
+fieldset {
+	border: 1px solid black;
+	padding: 15px;
+}
+
+form {
+	margin-bottom: 0.5em;
+}
+
+main {
+	margin: 1em 0;
+}
+
+table {
+	text-align: center;
+	border: 1px solid black;
+}
+
+table caption {
+	font-size: 1.5em;
+	font-family: sans-serif;
+	margin-bottom: 0.5em;
+	caption-side: top;
+}
+
+th, td {
+	border: 1px solid black;
+}
+
+th {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 0.3em;
+}
+
+.produto {
+	text-align: left;
+}
+
+td {
+	padding: 0.2em;
+	text-align: right;
+}
+
+tfoot {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: sans-serif;
+}

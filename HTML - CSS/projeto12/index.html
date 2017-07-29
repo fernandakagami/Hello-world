@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lojão do Jão</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body>
+		<header class="largura">
+			<h1>Lojão Sistemas</h1>
+		</header>
+		<nav class="menu">
+			<div class="largura">
+				<a href="index.html">Produtos</a>
+				<a href="index.html">Funcionários</a>
+				<a href="index.html">Relatórios</a>
+				<a class="destaque" href="index.html">Sair</a>
+			</div>
+		</nav>
+		<div class="largura">
+			<nav>
+				<a href="cadastrar.html">ir para: cadastro de projeto</a>
+			</nav>
+			<form method="post">
+				<fieldset>
+					<legend>Filtro</legend>
+					Nome:
+					<input type="text" name="nome">
+					<input type="submit" value="Filtrar">
+				</fieldset>
+			</form>
+			<main>
+				<table class="largura">
+					<caption>Listagem de produtos</caption>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Quantidade</th>
+							<th>Valor de compra (R$)</th>
+							<th>Valor de venda (R$)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="produto">Pacote de balas</td>
+							<td>100</td>
+							<td>1,00</td>
+							<td>2,00</td>
+						</tr>
+						<tr>
+							<td class="produto">Biscoito</td>
+							<td>20</td>
+							<td>2,80</td>
+							<td>5,50</td>
+						</tr>
+						<tr>
+							<td class="produto">Bolacha</td>
+							<td>30</td>
+							<td>1,50</td>
+							<td>3,75</td>
+						</tr>
+						<tr>
+							<td class="produto">Caixa de Paçoca</td>
+							<td>15</td>
+							<td>0,75</td>
+							<td>2,00</td>
+						</tr>
+						<tr>
+							<td class="produto">Refrigerante Chulézinho de Porco</td>
+							<td>50</td>
+							<td>2,50</td>
+							<td>3,50</td>
+						</tr>
+					</tbody>
+					<tfoot>
+							<td class="produto">total</td>
+							<td></td>
+							<td>337,25</td>
+							<td>627,50</td>
+					</tfoot>
+				</table>
+			</main>
+		</div>
+	</body>
+</html>
