@@ -1,0 +1,120 @@
+body {
+	margin-bottom: 10px;
+	
+}
+
+header {
+	background: #D3D3D3;
+	padding: 8px 0;
+	border-bottom: 1px solid black;
+	border-top: 30px solid #cfdbde;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+header > div {
+	width: 900px;
+	margin: auto;
+	overflow: hidden;
+	border-bottom: 2px ridge white;
+	padding-bottom: 7px;
+	margin-bottom: 10px;
+}
+
+div > h1 {
+	font-size: 1.5em;
+	font-family: sans-serif;
+	color: #2f3b3e;
+	float: left;
+	font-weight: bold;
+}
+
+div > h2 {
+	float: right;
+	color: gray;
+	padding-top: 2px;
+}
+
+header > nav {
+	width: 900px;
+	margin: auto;
+	overflow: hidden;
+}
+
+nav > p {
+	padding-right: 30px;
+	float: left;
+}
+
+nav > a {
+	padding-right: 20px;
+	float: left;
+}
+
+main {
+	width: 900px;
+	margin: auto;
+	overflow: hidden;
+	padding-top: 100px;	
+}
+
+main > article {
+	width: 430px;
+	margin: 10px;
+	float: left;
+	border: 1px solid black;
+	background: #cfdbde;
+	padding: 15px;
+}
+
+article h2 {
+	color: #2f3b3e;
+	font-weight: bold;
+	margin-bottom: 1em;
+	font-family: sans-serif;
+}
+
+.campo {
+	width: 300px;
+	padding: 3px;
+}
+
+.botao {
+	width: 90px;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+form {
+	margin-bottom: 1em;
+}
+
+table {
+		
+}
+
+.primeira {
+	width: 80px;
+}
+
+th,
+td {
+	width: 315px;
+	padding: 7px;
+	border: 1px solid black;
+	text-align: left;
+}
+
+th {
+	background: #eee;
+}
+
+.destaque {
+	background: #fcc;
+}
+
+tbody > tr {
+	background: #cfc;
+}
+
