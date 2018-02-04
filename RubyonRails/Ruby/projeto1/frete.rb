@@ -10,6 +10,6 @@ module Frete
   end
 
   def calcular_valor_final(valor_produto, uf)
-    valor_produto * TABELA_FRETE[uf]
+    valor_produto + TABELA_FRETE[uf]
   end
 end

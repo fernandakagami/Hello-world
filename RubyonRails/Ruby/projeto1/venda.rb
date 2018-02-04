@@ -1,19 +1,11 @@
 require_relative "pagamento"
 require_relative "frete"
+require_relative "produto"
 
 class Venda
   include Pagamento
   include Frete
-
-  PRODUTOS = {"PS3" => 900.00, "PS4" => 1600.00}
-
-  def imprimir_produtos
-    puts "--- Produtos ---"
-    PRODUTOS.each do |k,v|
-      puts "#{k} - #{SIMBOLO_MOEDA}#{v}"
-    end
-    puts "----------------"
-  end
+  include Produto
 
   def vender
     puts "Olá! Seja bem-vindo!"
@@ -34,16 +26,16 @@ class Venda
     puts "Calculando..."
     valor_final = calcular_valor_final(PRODUTOS[produto], uf)
 
-    puts "Você deve pagar #{Pagamento::SIMBOLO_MOEDA}#{valor_final} do produto + frete."
+    puts "Você deve pagar #{SIMBOLO_MOEDA}#{valor_final} do produto + frete."
 
     puts "Deseja pagar? (S/N)"
     opcao = gets.chomp
 
     if opcao == "S"
-      pagseguro = Pagamento::Pagseguro.new
+      pagseguro = Pagseguro.new
       pagar(valor_final)
     else
-      puts "Ok! Fica para a próxima! :()"
+      puts "Ok! Fica para a próxima! :("
     end
   end
 end
