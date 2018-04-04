@@ -1,6 +1,4 @@
 <?php
-$hash[] = array();
-
 echo "Digite seu nome:\n";
 $hash['nome'] = readline();
 echo "Digite sua idade:\n";
