@@ -1,0 +1,9 @@
+casa
+papel
+boca
+janela
+pneumatico
+computador
+gato
+cachorro
+prato

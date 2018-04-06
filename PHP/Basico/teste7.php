@@ -1,20 +1,15 @@
 <?php
-function maior ($num1, $num2)
-{
-  if ($num1 > $num2) {
-    return $num1;
-  } else {
-    return $num2;
+  function novoVetor($tamanho, $valorInicial = 0)
+  {
+    for ($i = 0; $i < $tamanho; $i++) {
+      $vetor[$i] = $valorInicial;
+    }
+    echo print_r($vetor);
   }
-}
 
-echo "Digite um numero:\n";
-$numero1 = readline();
-echo "Digite outro numero:\n";
-$numero2 = readline();
+echo "Digite o tamanho do vetor:\n";
+$tamanhoVetor = readline();
 
-$numero_maior = maior($numero1, $numero2);
-
-echo "O maior numero eh" . $numero_maior\n;
+novoVetor($tamanhoVetor);
 
 ?>

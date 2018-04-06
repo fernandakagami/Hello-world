@@ -1,18 +1,20 @@
 <?php
-$num_dig = 0;
-$i = -1;
-
-do {
-  echo "Digite um número:\n";
-  $num_dig = readline();
-  if ($num_dig != 0) {
-    $i++;
-    $numero[$i] = $num_dig;
+function maior ($num1, $num2)
+{
+  if ($num1 > $num2) {
+    return $num1;
+  } else {
+    return $num2;
   }
-} while ($num_dig != 0);
-
-while ($i >= 0) {
-  echo $numero[$i]."\n";
-  $i--;
 }
+
+echo "Digite um numero:\n";
+$numero1 = readline();
+echo "Digite outro numero:\n";
+$numero2 = readline();
+
+$numero_maior = maior($numero1, $numero2);
+
+echo "O maior numero eh" . $numero_maior\n;
+
 ?>

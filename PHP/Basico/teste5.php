@@ -1,13 +1,18 @@
 <?php
-echo "Digite seu nome:\n";
-$hash['nome'] = readline();
-echo "Digite sua idade:\n";
-$hash['idade'] = readline();
-echo "Digite seu telefone:\n";
-$hash['telefone'] = readline();
+$num_dig = 0;
+$i = -1;
 
-echo "O seu nome é: $hash[nome].\n";
-echo "A sua idade é: $hash[idade].\n";
-echo "O seu telefone é: $hash[telefone].\n";
+do {
+  echo "Digite um número:\n";
+  $num_dig = readline();
+  if ($num_dig != 0) {
+    $i++;
+    $numero[$i] = $num_dig;
+  }
+} while ($num_dig != 0);
 
+while ($i >= 0) {
+  echo $numero[$i]."\n";
+  $i--;
+}
 ?>

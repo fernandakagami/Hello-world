@@ -1,15 +1,42 @@
 <?php
-  function novoVetor($tamanho, $valorInicial = 0)
+namespace Aplicacao\Modelo;
+
+abstract class Pessoa
+{
+  protected $nome;
+
+  public function __construct($nome)
   {
-    for ($i = 0; $i < $tamanho; $i++) {
-      $vetor[$i] = $valorInicial;
-    }
-    echo print_r($vetor);
+    $this->nome = $nome;
   }
 
-echo "Digite o tamanho do vetor:\n";
-$tamanhoVetor = readline();
+  public function getNome()
+  {
+    return $this->nome;
+  }
 
-novoVetor($tamanhoVetor);
+  public function setNome($nome)
+  {
+    $this->nome = $nome;
+  }
 
+}
+
+class Gerente extends Pessoa
+{
+  public function __construct($nome)
+  {
+      parent::__construct($nome);
+  }
+
+  public function hello()
+  {
+    echo "Ola\n";
+  }
+}
+
+$person = new Gerente("Jose");
+echo "Nome da Pessoa:" . $person->getNome() . "\n";
+
+$person->hello();
 ?>
