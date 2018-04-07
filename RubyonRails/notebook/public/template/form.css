@@ -1,3 +1,4 @@
+/* Basic Grey */
 .basic-grey {
     margin-left:auto;
     margin-right:auto;
@@ -25,7 +26,7 @@
     display: block;
     margin: 0px;
 }
-.basic-grey div.field>label {
+.basic-grey label>span {
     float: left;
     width: 20%;
     text-align: right;
@@ -53,8 +54,8 @@
     padding: 5px 3px 3px 5px;
 }
 .basic-grey select {
-    background: #FFF image-url('down-arrow.png') no-repeat right;
-    background: #FFF image-url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right);
     appearance:none;
     -webkit-appearance:none;
     -moz-appearance: none;

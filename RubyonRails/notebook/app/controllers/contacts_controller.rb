@@ -65,10 +65,10 @@ class ContactsController < ApplicationController
 
   private
 
+    # Para pegar os tipos
     def options_for_select
       @kind_options_for_select = Kind.all
     end
-
     # Use callbacks to share common setup or constraints between actions.
     def set_contact
       @contact = Contact.find(params[:id])
