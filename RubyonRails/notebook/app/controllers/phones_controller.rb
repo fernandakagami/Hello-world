@@ -4,7 +4,7 @@ class PhonesController < ApplicationController
   # GET /phones
   # GET /phones.json
   def index
-    @phones = Phone.all
+    @phones = Phone.includes(:contact).order('contacts.name').page(params[:page]) 
   end
 
   # GET /phones/1

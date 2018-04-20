@@ -100,3 +100,108 @@ elsif match.count == 4
 else
   puts "Que pena! Você não foi sorteado na sena! Tente de novo!"
 end
+puts "------------------"
+
+#9
+vetor = Array.new
+i = 0
+begin
+  puts "Digite um numero:"
+  numero = gets.chomp.to_i
+  if numero >= 0
+    vetor.push(numero)
+    i += 1
+  else
+    puts "Valor negativo: encerrando o processo."
+    break
+  end
+end until i == 3
+
+new_vetor = vetor.reverse
+
+puts "O vetor é #{vetor}."
+puts "O tamanho do vetor é #{vetor.length}."
+puts "O inverso do vetor é #{new_vetor}."
+puts "------------------"
+
+#10
+vetor = Array.new
+i = 0
+begin
+  puts "Digite um numero:"
+  numero = gets.chomp.to_f
+  vetor.push(numero)
+  i += 1
+end until i == 3
+
+puts "Escolha um código:"
+puts "> 0 para finalizar o programa"
+puts "> 1 para mostrar o vetor"
+puts "> 2 para mostrar o vetor na ordem inversa"
+puts "Digite o código:"
+codigo = gets.chomp.to_i
+
+case codigo
+when 0
+  puts "Finalizando o programa..."
+when 1
+  puts "Imprimindo o vetor #{vetor}."
+when 2
+  puts "Imprimindo o vetor na ordem inversa #{vetor.reverse}."
+else
+  puts "Código Inválido."
+end
+puts "------------------"
+
+#11-12
+suco = { "laranja" => 0, "uva" => 0, "morango" => 0, "maca" => 0}
+
+begin
+  puts "Digite o sabor do suco:"
+  puts "1 - Laranja / 2 - Uva / 3 - Morango / 4 - Maça / 666 - encerrar o programa"
+  sabor = gets.chomp.to_i
+
+  if sabor == 1
+    suco["laranja"] += 1
+  elsif sabor == 2
+    suco["uva"] += 1
+  elsif sabor == 3
+    suco["morango"] += 1
+  elsif sabor == 4
+    suco["maca"] += 1
+  elsif sabor == 666
+    puts "Calculando..."
+    break
+  else
+    puts "Valor inválido"
+  end
+end until sabor == 666
+
+soma = 0
+suco.each do |tipo, qtds|
+  puts "Foram entregues #{qtds} de suco de #{tipo}."
+  soma += qtds
+end
+
+puts "No total foram entregues #{soma}."
+puts "------------------"
+
+#13
+a = [7, 4, 9, 3, 6]
+b = ["+", "-", "/", "*", "/"]
+c = [1, 3, 3, 2, 6]
+d = []
+
+for i in 0..4
+  if b[i] == "+"
+    d[i] = a[i] + c[i]
+  elsif b[i] == "-"
+    d[i] = a[i] - c[i]
+  elsif b[i] == "/"
+    d[i] = a[i] / c[i]
+  elsif b[i] == "*"
+    d[i] = a[i] * c[i]
+  end
+end
+
+puts d
