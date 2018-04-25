@@ -1,3 +1,4 @@
+<br>
 <div class="basic-grey">
   <p id="notice"><%= notice %></p>
 
@@ -29,5 +30,6 @@
   <%= paginate @contacts %>
   <br>
 
-  <%= link_to t('buttons.new'), new_contact_path %>
+  <%= link_to t('buttons.new'), new_contact_path, class: "btn btn-primary" %>
+  <%= link_to t('buttons.home'), root_path, class: "btn btn-primary" %>
 </div>

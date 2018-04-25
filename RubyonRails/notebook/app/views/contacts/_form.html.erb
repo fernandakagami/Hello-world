@@ -11,7 +11,7 @@
     <%= form.text_field :email, id: :contact_email %>
   </div>
 
-  <div class="field">
+  <div class="field clearfix">
     <%= form.label :kind_id %>
     <%= form.collection_select(:kind_id, @kind_options_for_select, :id, :description) %>
   </div>
@@ -35,8 +35,8 @@
     <%= form.fields_for :phones do |phones_fields| %>
       <%= render "phone_fields", f: phones_fields %>
     <% end %>
-    <div class="field">
-      <%= form.label :phones, ">" %><br>
+    <div class="field clearfix">
+      <%= form.label :phones, "<i class='fas fa-phone'></i>".html_safe %>
       <%= link_to_add_association('[Adicionar Telefone]', form, :phones) %>
     </div>
   </div>
@@ -47,8 +47,8 @@
   </div>
 
   <div class="actions">
-    <%= form.submit "Enviar", class: "button" %>
-    <%= link_to 'Back', contacts_path, class: "button" %>
+    <%= form.submit "Enviar", class: "btn btn-primary" %>
+    <%= link_to 'Back', contacts_path, class: "btn btn-primary" %>
   </div>
 
   <% if contact.errors.any? %>
