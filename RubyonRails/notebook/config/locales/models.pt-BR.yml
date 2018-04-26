@@ -4,6 +4,9 @@
       contact:
         one: Contato
         other: Contatos
+      kind:
+        one: Tipo de Contato
+        other: Tipos de Contato
       address:
         one: Endereço
         other: Endereços
@@ -17,6 +20,8 @@
         kind: Tipo de Contato
         kind_id: Tipo de Contato
         rmk: Obs.
+      kind:
+        description: Descrição
       address:
         street: Rua
         city: Cidade

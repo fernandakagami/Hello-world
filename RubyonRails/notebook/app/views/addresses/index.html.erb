@@ -1,16 +1,15 @@
 <br>
 <div class="basic-grey">
-  <p id="notice"><%= notice %></p>
-
-  <h1>Addresses</h1>
+  
+  <h1><%= "#{t('messages.listing')} #{@addresses.model.model_name.human(count: @addresses.count)}" %></h1>
 
   <table>
     <thead>
       <tr>
-        <th>Contact</th>
-        <th>Street</th>
-        <th>City</th>
-        <th>State</th>        
+        <th><%= @addresses.model.human_attribute_name("contact") %></th>
+        <th><%= @addresses.model.human_attribute_name("street") %></th>
+        <th><%= @addresses.model.human_attribute_name("city") %></th>
+        <th><%= @addresses.model.human_attribute_name("state") %></th>
       </tr>
     </thead>
 

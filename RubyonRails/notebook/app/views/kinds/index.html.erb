@@ -1,13 +1,16 @@
 <br>
 <div class="basic-grey">
-  <p id="notice"><%= notice %></p>
 
-  <h1>Listando os Tipos // <%= @meu_nome %></h1>
+  <script>
+    $.notify("<%= notice %>", "success");
+  </script>
+  
+  <h1><%= "#{t('messages.listing')} #{@kinds.model.model_name.human(count: @kinds.count)}" %></h1>
 
   <table>
     <thead>
       <tr>
-        <th>Description</th>
+        <th><%= @kinds.model.model_name.human(count: @kinds.count) %></th>
         <th colspan="2"></th>
       </tr>
     </thead>
@@ -16,8 +19,8 @@
       <% @kinds.each do |kind| %>
         <tr>
           <td><%= kind.description %></td>
-          <td><%= link_to 'Edit', edit_kind_path(kind) %></td>
-          <td><%= link_to 'Destroy', kind, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to t('buttons.edit'), edit_kind_path(kind) %></td>
+          <td><%= link_to t('buttons.destroy'), kind, method: :delete, data: { confirm: t('messages.confirm') } %></td>
         </tr>
       <% end %>
     </tbody>

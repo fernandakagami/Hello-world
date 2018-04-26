@@ -7,11 +7,6 @@ class AddressesController < ApplicationController
     @addresses = Address.includes(:contact).order('contacts.name').page(params[:page]) .per(10)
   end
 
-  # GET /addresses/1
-  # GET /addresses/1.json
-  def show
-  end
-
   # GET /addresses/new
   def new
     @address = Address.new

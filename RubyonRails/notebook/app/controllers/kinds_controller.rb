@@ -7,12 +7,7 @@ class KindsController < ApplicationController
     @kinds = Kind.all #SELECT "kinds".* FROM "kinds"
   end
 
-  # GET /kinds/1
-  # GET /kinds/1.json
-  def show
-  end
-
-  # GET /kinds/new
+    # GET /kinds/new
   def new
     @kind = Kind.new
   end
@@ -28,7 +23,7 @@ class KindsController < ApplicationController
 
     respond_to do |format|
       if @kind.save
-        format.html { redirect_to @kind, notice: 'Kind was successfully created.' }
+        format.html { redirect_to kinds_path, notice: I18n.t('messages.created') }
         format.json { render :show, status: :created, location: @kind }
       else
         format.html { render :new }
@@ -42,7 +37,7 @@ class KindsController < ApplicationController
   def update
     respond_to do |format|
       if @kind.update(kind_params)
-        format.html { redirect_to @kind, notice: 'Kind was successfully updated.' }
+        format.html { redirect_to kinds_path, notice: I18n.t('messages.updated') }
         format.json { render :show, status: :ok, location: @kind }
       else
         format.html { render :edit }
@@ -56,7 +51,7 @@ class KindsController < ApplicationController
   def destroy
     @kind.destroy
     respond_to do |format|
-      format.html { redirect_to kinds_url, notice: 'Kind was successfully destroyed.' }
+      format.html { redirect_to kinds_path, notice: I18n.t('messages.destroyed') }
       format.json { head :no_content }
     end
   end
