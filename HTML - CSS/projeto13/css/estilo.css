@@ -1,146 +1,64 @@
-.largura {
-  max-width: 1000px;
-  margin: auto;
-
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  background-color: #333333;
+  padding: 10px 40px;
+  color: white;
+  margin-top: 5px;
 }
 
-h1{
-  font: bold 42px sans-serif;
-  padding: 30px 0;
-  text-align: center;
-  letter-spacing: 0.35em;
+nav {
+  background-color: #33cc33;
+  font-size: 1.3em;
+  padding: 20px 0 20px 40px;
+  color: white;
 }
 
-.altura {
-  margin: 0 auto;
-  overflow: hidden;
+nav a {
+  text-decoration: underline;
+  padding-right: 10px;
+  text-shadow: 2px 1px 1px black;
 }
 
-.conteudo {
-  float: left;
-  width: 750px;
-  overflow: hidden;
-  margin-right: 20px;
+article {
+  margin: 30px;
+  border: 1.5px solid #aaaaaa;
 }
 
-main h2 {
-  font: italic bold 25px sans-serif;
-  letter-spacing: 0.1em;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #A9A9A9;
-}
-
-.artigo {
-  margin: 15px 0;
-  background-color: #E6E6FA;
-  border-radius: 15px;
-  padding: 15px;
-}
-
-article > header {
-  overflow: hidden;
-}
-
-header > h3 {
-  float: left;
-  font: bold 1.1em sans-serif;
-}
-
-header > small {
-  color: gray;
-  float: right;
-  padding-bottom: 1em;
-  font-family: "Times New Roman", serif;
-  font-size: 1.1em;
-}
-
-article p {
-  text-align: justify;
-  text-indent: 5em;
-  line-height: 1.2em;
-}
-
-aside {
-  float: right;
-  margin-left: 5px;
-  width: 224px;
+h2 {
+  background-color: #aaaaaa;
   padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-.menu-lateral {
-  padding: 13px;
-  background-color: #E6E6FA;
-  border-radius: 15px;
-  margin-bottom: 1em;
+article div {
+  padding: 20px;
 }
 
-.titulo {
-  font: bold 1.1em sans-serif;
-  color: gray;
-  margin-bottom: 0.7em;
-  letter-spacing: 0.1em;
-}
-
-nav > div {
-  color: blue;
-  font-family: sans-serif;
-  font-size: 0.9em;
-  padding-bottom: 0.3em;
-}
-
-form {
-  float: none;
-  width: auto;
-}
-
-form div {
+figure {
+  text-align: center;
   margin-bottom: 0.5em;
 }
 
-.login {
-  font-size: 1em;
-  width: 100%;
+figure img {
+  width: 80%;
 }
 
-input[type="submit"] {
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+ul > li {
+  list-style: disc inside;
+  font-size: 1.2em;
+}
+
+ol > li {
+  list-style: decimal inside;
+  font-size: 1.2em;
+}
+
+footer {
   text-align: center;
-  width: 100%;
-}
-
-footer{
-  text-align: center;
-  font-style: italic;
-  padding-bottom: 1em;
-}
-
-@media (max-width: 1000px) {
-  h1 {
-    letter-spacing: 0 ;
-  }
-
-  .largura, .conteudo {
-    width: auto;
-    margin: 0;
-    float: none;
-  }
-
-  body > div {
-    padding: 20px;
-  }
-
-  main,
-  div > aside {
-    float: none;
-    width: auto;
-
-  }
-
-  div > aside {
-    width: 100%;
-    text-align: center;
-    margin-left: 0;
-    padding: 0;
-  }
+  background-color: #333333;
+  padding: 10px 0;
+  color: white;
+  font-size: 0.9em;
 }

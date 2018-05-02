@@ -1,40 +1,45 @@
 body {
-	width: 700px;
-	margin: auto;
+	padding: 20px;
 }
 
-header {
-	margin: 20px 0;
-	text-align: center;
-}
-
-h1 {
-	font-size: 3em;
-	font-weight: bold;
-}
-
-img {
-	height: 2em;
+header > img {
+	width: 100%;
 }
 
 nav {
-	margin-bottom: 15px;
 	text-align: center;
+	margin: 30px;
+	font-size: 35px;
+	font-style: italic;
 }
 
-p {
-	margin-bottom: 1em;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	text-indent: 3em;
+main {
+	text-align: center;
+	border-bottom: 1px dashed black;
 }
 
-strong {
-	font-weight: bold;
+main > img {
+	width: 70px;
+	margin-bottom: 20px;
+}
+
+main > p {
+	font-size: 24px;
+	text-align: justify;
+	text-indent: 80px;
+	margin-bottom: 20px;
 }
 
 footer {
-	font-size: 0.85em;
 	text-align: center;
-	margin-bottom: 1em;
+	font-size: 24px;
+	padding-top: 20px;
+}
+
+address > p {
+	padding-bottom: 10px;
+}
+
+address > p > img {
+	height: 40px;
 }

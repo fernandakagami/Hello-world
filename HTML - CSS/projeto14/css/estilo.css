@@ -1,64 +1,50 @@
-h1 {
-  font-size: 3em;
-  text-transform: uppercase;
-  background-color: #333333;
-  padding: 10px 40px;
-  color: white;
-  margin-top: 5px;
+body {
+	margin: 0 30px;
+}
+
+header {
+	padding: 80px 0;
+	background: url("../img/moda.jpg") no-repeat center;
+	background-size: auto;
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px white;
 }
 
 nav {
-  background-color: #33cc33;
-  font-size: 1.3em;
-  padding: 20px 0 20px 40px;
-  color: white;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 1.2em;
 }
 
-nav a {
-  text-decoration: underline;
-  padding-right: 10px;
-  text-shadow: 2px 1px 1px black;
+nav > a {
+	padding: 7px 15px 7px 15px;
 }
 
-article {
-  margin: 30px;
-  border: 1.5px solid #aaaaaa;
+nav > img {
+	padding: 0 15px 2px 15px;
 }
 
-h2 {
-  background-color: #aaaaaa;
-  padding: 10px;
-  font-size: 1.2em;
-  font-weight: bold;
+main {
+	margin-bottom: 2em;
 }
 
-article div {
-  padding: 20px;
+article > h2 {
+	padding: 15px 0;
+	font-size: 2.2em; 
+	font-style: italic;
 }
 
-figure {
-  text-align: center;
-  margin-bottom: 0.5em;
+article > figure >img {
+	width: 100%;
 }
 
-figure img {
-  width: 80%;
-}
-
-ul > li {
-  list-style: disc inside;
-  font-size: 1.2em;
-}
-
-ol > li {
-  list-style: decimal inside;
-  font-size: 1.2em;
-}
-
-footer {
-  text-align: center;
-  background-color: #333333;
-  padding: 10px 0;
-  color: white;
-  font-size: 0.9em;
+article > p{
+	padding: 10px 0;
+	text-align: justify;
+	text-indent: 3em;
+	font-size: 1.2em;
 }

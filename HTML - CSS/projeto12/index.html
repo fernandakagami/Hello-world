@@ -1,86 +1,67 @@
-﻿<!DOCTYPE html>
+<!DOcTYPE html>
 <html>
-	<head>
-		<title>Lojão do Jão</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/estilo.css">
-	</head>
-	<body>
-		<header class="largura">
-			<h1>Lojão Sistemas</h1>
-		</header>
-		<nav class="menu">
-			<div class="largura">
-				<a href="index.html">Produtos</a>
-				<a href="index.html">Funcionários</a>
-				<a href="index.html">Relatórios</a>
-				<a class="destaque" href="index.html">Sair</a>
-			</div>
-		</nav>
-		<div class="largura">
-			<nav>
-				<a href="cadastrar.html">ir para: cadastro de projeto</a>
-			</nav>
-			<form method="post">
-				<fieldset>
-					<legend>Filtro</legend>
-					Nome:
-					<input type="text" name="nome">
-					<input type="submit" value="Filtrar">
-				</fieldset>
-			</form>
-			<main>
-				<table class="largura">
-					<caption>Listagem de produtos</caption>
-					<thead>
-						<tr>
-							<th>Nome</th>
-							<th>Quantidade</th>
-							<th>Valor de compra (R$)</th>
-							<th>Valor de venda (R$)</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="produto">Pacote de balas</td>
-							<td>100</td>
-							<td>1,00</td>
-							<td>2,00</td>
-						</tr>
-						<tr>
-							<td class="produto">Biscoito</td>
-							<td>20</td>
-							<td>2,80</td>
-							<td>5,50</td>
-						</tr>
-						<tr>
-							<td class="produto">Bolacha</td>
-							<td>30</td>
-							<td>1,50</td>
-							<td>3,75</td>
-						</tr>
-						<tr>
-							<td class="produto">Caixa de Paçoca</td>
-							<td>15</td>
-							<td>0,75</td>
-							<td>2,00</td>
-						</tr>
-						<tr>
-							<td class="produto">Refrigerante Chulézinho de Porco</td>
-							<td>50</td>
-							<td>2,50</td>
-							<td>3,50</td>
-						</tr>
-					</tbody>
-					<tfoot>
-							<td class="produto">total</td>
-							<td></td>
-							<td>337,25</td>
-							<td>627,50</td>
-					</tfoot>
-				</table>
-			</main>
-		</div>
-	</body>
+  <head>
+    <title>Fofocas Quentes.COM</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <header class="largura">
+      <h1>Fofocas Quentes.COM</h1>
+    </header>
+    <div class="largura altura">
+    <aside>
+      <nav class="menu-lateral">
+        <header class="titulo">Menu principal</header>
+        <div>
+          <a href="index.html">Home</a>
+        </div>
+        <div>
+          <a href="index.html">Fococas</a>
+        </div>
+        <div>
+          <a href="index.html">Educação</a>
+        </div>
+      </nav>
+      <form class="menu-lateral" method="post" action="index.html">
+        <header class="titulo">Acesso restrito</header>
+            <div>
+              <input class="login" type="text" name="login" placeholder="Login">
+            </div>
+            <div>
+              <input class="login" type="password" name="senha" placeholder="Senha">
+            </div>
+            <div>
+              <input type="checkbox" name="lembrar">
+              Lembrar
+            </div>
+            <div>
+              <input type="submit" value="Entrar">
+            </div>
+      </form>
+    </aside>
+      <main class="conteudo">
+        <h2>Home</h2>
+        <article class="artigo">
+          <header>
+            <h3>Título da notícia</h3>
+            <small>Publicado em: 29 de julho de 2017</small>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices consequat vulputate. Sed at magna felis. Sed sit amet eros at dui volutpat vehicula et ut enim. Integer varius quam at purus facilisis elementum. Sed aliquet varius mauris, eget efficitur lorem mollis posuere. Nulla lacinia sed arcu sed bibendum. Maecenas porttitor bibendum dolor sit amet tempus. In rutrum, nulla vitae euismod sodales, diam erat iaculis diam, bibendum aliquet lectus neque eu libero. Sed ex nisl, finibus ac eros eget, dignissim ultrices purus. Curabitur luctus nec massa sed semper.</p>
+        </article>
+        <article class="artigo">
+          <header>
+            <h3>Título da notícia</h3>
+            <small>Publicado em: 29 de julho de 2017</small>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices consequat vulputate. Sed at magna felis. Sed sit amet eros at dui volutpat vehicula et ut enim. Integer varius quam at purus facilisis elementum. Sed aliquet varius mauris, eget efficitur lorem mollis posuere. Nulla lacinia sed arcu sed bibendum. Maecenas porttitor bibendum dolor sit amet tempus. In rutrum, nulla vitae euismod sodales, diam erat iaculis diam, bibendum aliquet lectus neque eu libero. Sed ex nisl, finibus ac eros eget, dignissim ultrices purus. Curabitur luctus nec massa sed semper.</p>
+        </article>
+      </main>
+    </div>
+    <footer class="largura">
+        Todos os direitos reservados ©
+    </footer>
+    </main>
+  </body>
 </html>

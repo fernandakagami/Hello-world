@@ -1,51 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-  <title>Rádio Brazuca</title>
+  <title>TSI Tube</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <header>
-    <h1>letras</h1>
-  </header>
-  <nav>
-    <a href="index.html">Ranking</a>
-    <a href="https://www.letras.mus.br/estilos/rock/">Rock</a>
-    <a href="https://www.letras.mus.br/estilos/sertanejo/">Sertanejo</a>
-    <a href="https://www.letras.mus.br/estilos/funk-carioca/">Funk</a>
-    <a href="https://www.letras.mus.br/estilos/hip-hop-rap/">Hip Hop</a>
+  <nav id="menu-topo">
+    <header>
+      <img src="img/tsi-tube.jpg" alt="Logo TSI Tube">
+    </header>
+    <form action="index.html" method="post">
+      <input type="text" name="nome" value="" placeholder="Digite o nome do vídeo">
+      <input type="submit" name="pesquisar" value="Pesquisar">
+    </form>
+    <div>
+      Usuário: Fernanda
+    </div>
   </nav>
-  <figure>
-    <img src="img/mamonas.jpg" alt="Mamonas Assassinas">
-  </figure>
-  <main>
-    <article>
-      <h2>Ranking túnel do tempo</h2>
-      <p>Confira a seleção mais pedida da Rádio Brazuca:</p>
-      <ol>
-        <li>Cazuza - O Tempo Não Pára</li>
-        <li>RPM - Olhar 43</li>
-        <li>Titãs - É Preciso Saber Viver</li>
-        <li>Chico Buarque - A Banda</li>
-        <li>Racionais Mc's - Vida Loka (parte 1)</li>
-        <li>Claudinho &amp; Buchecha - Fico Assim Sem Você</li>
-        <li>Victor e Leo - Borboletas</li>
-        <li>Bikini Cavadão - Impossível</li>
-      </ol>
-    </article>
-  </main>
-  <footer>
-    <blockquote cite="https://pt.wikipedia.org/wiki/Legi%C3%A3o_Urbana">
-      <p>"Nas favelas, no Senado</p>
-      <p>Sujeira pra todo lado</p>
-      <p>Ninguém respeita a Constituição</p>
-      <p>Mas todos acreditam no futuro da nação"</p>
-      <p>Legião Urbada - Que País É Esse?</p>
-    </blockquote>
-    <address>
-      <a href="mailto:faroeste@caboclo.com.br">faroeste@caboclo.com.br</a>
-    </address>
-  </footer>
+  <nav id="menu-lateral">
+    <ul>
+      <li id="selecionado"><a href"">Início</a></li>
+      <li><a href="">Meu canal</a></li>
+      <li><a href="">Em alta</a></li>
+      <li><a href="">Inscrições</a></li>
+      <li><a href="">Histórico</a></li>
+      <li><a href="">Assistir mais tarde</a></li>
+    </ul>
+  </nav>
+  <div>
+    <aside>
+      <img src="img/rock-in-rio.jpg" alt="Rock in Rio">
+    </aside>
+    <main>
+      <ul>
+        <li>
+          <article>
+            <img src="img/gorillaz.jpg" alt="Gorillaz">
+            <header>
+              <h2>Best song compilation</h2>
+            </header>
+            <p>Gorillaz</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="img/gatinho.jpg" alt="Gatinho">
+            <header>
+              <h2>Gatinho brincando</h2>
+            </header>
+            <p>Fofinho S2</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="img/kefera.jpg" alt="Kefera">
+            <header>
+              <h2>O que as mulheres pensam</h2>
+            </header>
+            <p>Kéfera</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="img/nerdologia.jpg" alt="Nerdologia">
+            <header>
+              <h2>Olimpíadas</h2>
+            </header>
+            <p>Nerdologia</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="img/nostalgia.jpg" alt="Nostalgia">
+            <header>
+              <h2>A história do Batman</h2>
+            </header>
+            <p>Nostalgia</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="img/lindsey.jpg" alt="Lindsey">
+            <header>
+              <h2>Zelda Medley</h2>
+            </header>
+            <p>Lindsey Stirling</p>
+          </article>
+        </li>
+      </ul>
+    </main>
+  </div>
 </body>
+</html>

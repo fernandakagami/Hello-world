@@ -1,120 +1,140 @@
-body {
-	margin-bottom: 10px;
-	
-}
-
 header {
-	background: #D3D3D3;
-	padding: 8px 0;
-	border-bottom: 1px solid black;
-	border-top: 30px solid #cfdbde;
-	position: fixed;
-	top: 0;
-	width: 100%;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  font-family: sans-serif;
 }
 
 header > div {
-	width: 900px;
-	margin: auto;
-	overflow: hidden;
-	border-bottom: 2px ridge white;
-	padding-bottom: 7px;
-	margin-bottom: 10px;
+  width: 1000px;
+  margin:auto;
 }
 
 div > h1 {
-	font-size: 1.5em;
-	font-family: sans-serif;
-	color: #2f3b3e;
-	float: left;
-	font-weight: bold;
+  font-size: 40px;
+  float: left;
+  font-weight: bold;
+  padding: 20px 30px;
 }
 
-div > h2 {
-	float: right;
-	color: gray;
-	padding-top: 2px;
-}
-
-header > nav {
-	width: 900px;
-	margin: auto;
-	overflow: hidden;
-}
-
-nav > p {
-	padding-right: 30px;
-	float: left;
+header > div > nav {
+  float: right;
+  font-size: 18px;
+  margin-top: 30px;
 }
 
 nav > a {
-	padding-right: 20px;
-	float: left;
+  margin-top: 10px;
+  padding: 30px 20px;
+}
+
+nav > a:hover {
+  background-color: gray;
 }
 
 main {
-	width: 900px;
-	margin: auto;
-	overflow: hidden;
-	padding-top: 100px;	
+  background-color: #eee;
 }
 
-main > article {
-	width: 430px;
-	margin: 10px;
-	float: left;
-	border: 1px solid black;
-	background: #cfdbde;
-	padding: 15px;
+main > div {
+  width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+  overflow: hidden;
 }
 
-article h2 {
-	color: #2f3b3e;
-	font-weight: bold;
-	margin-bottom: 1em;
-	font-family: sans-serif;
+article {
+  border: 2px solid #ddd;
+  float: left;
+  background-color: white;
+  border-radius: 5px;
+  width: 750px;
 }
 
-.campo {
-	width: 300px;
-	padding: 3px;
+h2 {
+  font-size: 30px;
+  font-family: sans-serif;
+  padding: 25px 20px;
 }
 
-.botao {
-	width: 90px;
-	font-size: 0.8em;
-	padding: 3px;
+article >figure {
+  padding: 0 25px;
 }
 
-form {
-	margin-bottom: 1em;
+article > figure > img {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-table {
-		
+article > figure > figcaption {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  padding: 7px 0;
 }
 
-.primeira {
-	width: 80px;
+article > nav {
+  padding: 20px 45px;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
-th,
-td {
-	width: 315px;
-	padding: 7px;
-	border: 1px solid black;
-	text-align: left;
+nav > div {
+  float: left;
 }
 
-th {
-	background: #eee;
+.espaco {
+  margin-right: 45px;
 }
 
-.destaque {
-	background: #fcc;
+
+div > aside,
+div > div {
+  float: right;
+  width: 225px;
+  border: 2px solid #ddd;
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
-tbody > tr {
-	background: #cfc;
+aside > figure {
+  padding: 2px 15px;
 }
 
+aside > figure > img {
+  width: 100%;
+}
+
+aside > a {
+  padding-left: 40px;
+}
+
+main > div > div > h2 {
+  text-align: center;
+}
+
+div > form {
+  padding: 0 15px;
+}
+
+form > input {
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 20px;
+}
+
+footer {
+  background: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}

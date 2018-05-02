@@ -1,92 +1,168 @@
-#topo {
-	height: 65px;
-	background: orange;
-	overfloat: hidden;
+body {
+	background: #e9ebee;
+	font-family: sans-serif;
+}
+
+body > header {
+	z-index: 5;
+	position: fixed;
+	top: 0;
 	width: 100%;
-}
-
-#topo > form {
-	float: left;
-	padding: 20px 20px;
-}
-
-#topo > form > input {
-	font-style: italic;	
-	font-size: 20px;
-	padding-left: 20px;
-	border-radius: 1em;
-	width: 200px;
-}
-
-
-#topo > div {
-	float: left;
-	color: white;
-	padding: 20px 300px;
-	background: url("../img/logo.png") no-repeat center center/140px;
-	text-align: center;
-}
-
-#topo > div > h1 {
-	text-shadow: 1px 1px 1px black;
-	font-weight: bold;
-	font-size: 30px;
-}
-
-#topo > address {
-	color: white;
-	float: right;
-	padding: 25px 5px 0 0;
-	font-weight: bold;
-}
-
-nav {
-	padding: 10px 0; 
-	text-align: center;
-	font-size: 15px;
-	font-style: italic;
-	font-weight: bold;
-	color: black;
-	border-bottom: 1px solid black;
-}
-
-nav a {
-	padding-left: 25px;
-}
-
-
-a:link, a:active, a:hover, a:visited {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-main > figure {
-	text-align: center;
+	color:white;
+	background: #6495ED;
 	padding: 10px 0;
 }
 
-main > figure > img {
-	height: 400px;
+.site-largura {
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
-article {
-	margin: 0 15px 20px;
+.formulario, .usuario {
 	float: left;
-	width: 370px;
+	width: 50%;
+	font-size: 0.95em;
 }
 
-article > img {
-	width: 200px;
+.formulario span {
+	float left;
+	margin: 3px 10px 0 2px;
+}
+
+.formulario input {
+	width: 250px;
+}
+
+.usuario {
+	text-align: right;
+	margin-top: 3px;
+}
+
+.site-altura {
+	margin-top: 55px;
+}
+
+nav,
+main,
+aside {
+	float: left;
+}
+
+nav {
+		width: 20%;
+		font-size: 0.8em;
+}
+
+nav li {
+	margin-bottom: 0.75em;
+}
+
+.favoritos {
+	font-weight: bold;
+	color: gray;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	padding-top: 0.5em;
+}
+
+.icone {
+	position: relative;
+	bottom: 3px;
+	background: url('../img/icones.png');
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+}
+
+.icone-editar {
+	background: url('../img/icones2.png');
+	background-position: 0 -96px;
+}
+
+.icone-novidades {
+	background-position: 0 -776px;
+}
+
+.icone-mensagem {
+	background-position: 0 -742px;
+}
+
+main {
+	width: 55%;
+}
+
+main > article {
+	padding: 10px 10px 12px 10px;
+	margin-right: 20px;
+	margin-bottom: 0.7em;
+	background: white;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+}
+
+article > header {
+	margin-bottom: 20px;
+	overflow: hidden;
+	border-bottom: 1px solid gray;
+}
+
+figure > img {
+	width: 47px;
+	margin-bottom: 0.8em;
 	float: left;
 	margin-right: 1em;
 }
 
-article > div {
-	overfloat: hidden;
+.titulo {
+	float: left;
+	margin-top: 0.2em;
 }
 
-article > div > h2 {
+h2 {
+	color: #444477;
 	font-weight: bold;
-	font-size: 25px;
-	margin-bottom: 1em;
+	margin-bottom: 0.4em;
+}
+
+small {
+	font-size: 0.9em;
+	color: gray;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.publicação {
+	background-color: #f0fff0;
+}
+
+.figura-dif {
+	width: 40px;
+	padding: 1px 0 0 1px;
+}
+
+.destaque {
+	outline: 2px solid yellow;
+}
+
+p > span {
+	color: red;
+	font-weight: bold;
+}
+
+aside {
+	width: 25%;
+	padding: 10px;
+	background: white;
+	font-size: 0.8em;
+	color: #666699;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+}
+
+aside > img {
+	width: 200px;
 }

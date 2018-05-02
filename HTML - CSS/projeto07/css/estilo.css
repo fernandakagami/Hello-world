@@ -1,106 +1,79 @@
-body {
-  padding: 1em;
-  background: white linear-gradient(#ddeeff, white 25%);
-  font-size: 20px;
-}
-
-body > header {
-  padding: 5em 0;
-  background: url('../img/corredor.png') no-repeat 45% top;
-}
-
 header {
-  padding: 0.5em 0;
-  text-align: center;
+  background: linear-gradient(#ccff33, #ffcc00);
+  padding: 8px 0;
 }
 
-h1 {
-  font-size: 2em;
-  font-weight: bold;
+header > h1 {
+  margin-left: 40px;
+  font-size: 45px;
   text-transform: uppercase;
-  text-shadow: 0px 0px 7px white;
+  text-shadow: 1px 1px 5px black;
+  color:  white;
+  font-weight: bold;
 }
 
 nav {
-  padding: 10px 0;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  margin-bottom: 1em;
   text-align: center;
+  padding: 10px 0;
+  font-size: 22px;
+  font-style: italic;
+  border-bottom: 5px solid yellow;
+  margin : 0 20px;
 }
 
-article {
-  margin-bottom: 1em;
-}
-
-article > header {
-  border-top: 1px solid black;
-  border-bottom:1px solid black;
-  border-left: 10px solid black;
-  border-right: 10px solid black;
-  margin-bottom: 1em;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-weight: bold;
+nav > a {
+  padding-left: 10px;
 }
 
 figure {
-  margin-bottom: 1em;
   text-align: center;
+  margin: 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid yellow;
 }
 
 figure > img {
-  width: 50%
+  width: 100%;
 }
 
-figcaption {
+main > article {
+  margin: 5px;
+}
+
+main > article > h2 {
+  padding: 7px 25px;
+  font-size: 40px;
   font-style: italic;
 }
 
-p {
-  margin-bottom: 1em;
-  text-align: justify;
-  text-indent: 3em;
-  line-height: 1.5em;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.85em;
-}
-
-blockquote {
-  margin-bottom: 0.25em;
-}
-
-address {
-  font-style: italic;
-}
-
-em {
-  font-style: italic;
-}
-
-ul {
-  margin-bottom: 1em;
-  color: #000066;
-}
-
-li {
-  margin-bottom: 0.25em;
-}
-
-ul > li {
-  list-style: disc inside;
+main > article > p {
+  padding: 5px 15px;
+  font-size: 25px;
 }
 
 ol {
-  margin-bottom: 1em;
-  color: #660000;
+  list-style: decimal inside;
+  font-size: 20px;
+  padding: 5px 15px;
 }
 
-ol > li {
-  list-style: decimal inside;
+ol li {
+  margin-bottom: 5px;
+}
+
+footer {
+  background: linear-gradient(#ffcc00,#ccff33);
+  padding: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+blockquote {
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 5px gray;
+}
+
+address {
+  margin-bottom: 2px;
 }

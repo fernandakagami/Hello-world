@@ -46,7 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* Novos resets */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -57,14 +56,9 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
-hr {
-	margin: 0;
-	padding: 0;
-}
 a:link,
-a:active,
+a:visited,
 a:hover,
-a:visited {
-	color: inherit;
-	text-decoration: inherit;
+a:active {
+    color: inherit;
 }
