@@ -19,8 +19,7 @@ while i >= 0
   i -= 1
 end
 
-=begin 02-Leia do usuário as seguintes informações: nome, idade e telefone. Armazene as informações
-num hash (dicionário). Imprima as informações do usuário.
+=begin 02-Leia do usuário as seguintes informações: nome, idade e telefone. Armazene as informações num hash (dicionário). Imprima as informações do usuário.
 =end
 h = {}
 puts "Digite um nome:\n"
