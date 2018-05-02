@@ -41,7 +41,7 @@ while ($i >= 0) {
   $i--;
 }
 
-#04-Leia dois números. Imprima somente o maior.
+#04-Crie uma função que receba 2 números e retorne o maior deles.
 function maior ($num1, $num2)
 {
   if ($num1 > $num2) {
@@ -60,7 +60,7 @@ $numero_maior = maior($numero1, $numero2);
 
 echo "O maior numero eh" . $numero_maior\n;
 
-#05
+/*05-Crie a função “novoVetor”. Ela deverá receber 2 números: $tamanho e $valorInicial. A função deverá retornar um vetor de tamanho igual à $tamanho. Todos os elementos do vetor deverão ter como valor o $valorInicial. O parâmetro $valorInicial deverá ser opcional, portanto caso o usuário não forneça o valor, ele deverá ser zero. Dica: use a função do PHP print_r para imprimir um vetor.*/
 function novoVetor($tamanho, $valorInicial = 0)
 {
   for ($i = 0; $i < $tamanho; $i++) {

@@ -1,4 +1,5 @@
 <?php
+#Crie um pequeno programa que possua uma interface e uma classe abstrata.
 namespace Aplicacao\Modelo;
 
 abstract class Pessoa
