@@ -1,4 +1,5 @@
 <?php
+#Peça números para o usuário até ele digitar o número 0. Imprima todos os números.
 $num_dig = 0;
 $i = -1;
 

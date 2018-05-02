@@ -1,4 +1,5 @@
 <?php
+#Leia dois números. Imprima somente o maior.
 function maior ($num1, $num2)
 {
   if ($num1 > $num2) {

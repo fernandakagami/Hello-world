@@ -1,4 +1,5 @@
 <?php
+#Leia do usuário as seguintes informações: nome, idade e telefone. Armazene as informações num hash (dicionário). Imprima as informações do usuário.
 echo "Digite seu nome:\n";
 $hash['nome'] = readline();
 echo "Digite sua idade:\n";
