@@ -1,5 +1,8 @@
 <?php
-#01
+/*01-Tendo como dados de entrada a altura (em metros) e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+para homens: (72.7 * h) - 58
+para mulheres: (62.1 * h) - 44.7
+Para a escolha do sexo, criar um menu: m – Homem f – Mulher s – Sair.*/
 echo "Digite sua altura:\n";
 $altura = readline();
 echo "Digite seu gênero(M ou F):\n";
@@ -21,7 +24,7 @@ switch ($sexo) {
     echo "Dados incorretos.\n\n";
 }
 
-#02
+/*02-Recebidos valores numéricos entre zero e cinco, escreva-os na forma literal. Pergunte ao usuário se deseja os numerais em inglês ou português. Escrever os números de acordo com a escolha do usuário.*/
 
 do {
   echo "Digite um número entre 0 e 5:\n";

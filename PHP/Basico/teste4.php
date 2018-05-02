@@ -1,14 +1,42 @@
 <?php
-#Leia do usuário as seguintes informações: nome, idade e telefone. Armazene as informações num hash (dicionário). Imprima as informações do usuário.
-echo "Digite seu nome:\n";
-$hash['nome'] = readline();
-echo "Digite sua idade:\n";
-$hash['idade'] = readline();
-echo "Digite seu telefone:\n";
-$hash['telefone'] = readline();
+namespace Aplicacao\Modelo;
 
-echo "O seu nome é: $hash[nome].\n";
-echo "A sua idade é: $hash[idade].\n";
-echo "O seu telefone é: $hash[telefone].\n";
+abstract class Pessoa
+{
+  protected $nome;
 
+  public function __construct($nome)
+  {
+    $this->nome = $nome;
+  }
+
+  public function getNome()
+  {
+    return $this->nome;
+  }
+
+  public function setNome($nome)
+  {
+    $this->nome = $nome;
+  }
+
+}
+
+class Gerente extends Pessoa
+{
+  public function __construct($nome)
+  {
+      parent::__construct($nome);
+  }
+
+  public function hello()
+  {
+    echo "Ola\n";
+  }
+}
+
+$person = new Gerente("Jose");
+echo "Nome da Pessoa:" . $person->getNome() . "\n";
+
+$person->hello();
 ?>
