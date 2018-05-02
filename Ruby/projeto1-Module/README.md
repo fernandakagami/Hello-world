@@ -1,5 +1,5 @@
 # README
 
-Apredendo Modulo.
+Aprendendo Módulo.
 
 Aplicação simulando pagamento.
