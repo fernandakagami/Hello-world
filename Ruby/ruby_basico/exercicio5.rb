@@ -1,25 +1,27 @@
-class Cachorro
-  attr_accessor :nome
-  attr_reader :raca
+class JogoAdivinhe
+  attr_reader :numero, :valor
 
-  def initialize(nome, raca)
-    @nome = nome
-    @raca = raca
+  def initialize
+    @numero = Random.rand(1..10)
+    @valor = false
   end
 
-  def latir(texto = "Au au!")
-    texto
+  def adivinheNumero(numero = 0)
+    if numero == @numero
+      @valor = true
+      return "Você venceu!"
+    elsif numero > @numero
+      return "O número é muito alto..."
+    else
+      return "O número é muito baixo..."
+    end
   end
 end
 
-cachorro1 = Cachorro.new("Alvin", "pastor-alemão")
-cachorro2 = Cachorro.new("Thor", "poodle")
+jogo = JogoAdivinhe.new
 
-
-puts cachorro1.nome
-puts cachorro1.raca
-puts cachorro1.latir
-
-puts cachorro2.nome
-puts cachorro2.raca
-puts cachorro2.latir("Au!")
+until jogo.valor do
+  puts "Digite um numero:"
+  numero = gets.to_i
+  puts jogo.adivinheNumero(numero)
+end

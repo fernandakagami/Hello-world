@@ -1,9 +1,16 @@
-h = {}
-puts "Digite um nome:\n"
-h.merge! ({:nome => gets.chomp})
-puts "Digite uma idade:\n"
-h.merge! ({:idade => gets.chomp})
-puts "Digite um telefone:\n"
-h.merge! ({:telefone => gets.chomp})
+class Vetor
+  def novoVetor(tamanho, valorInicial = 0)
+    vetor = Array.new
+    for i in 0...tamanho
+      vetor.push(valorInicial)
+    end
+    puts vetor.inspect
+  end
+end
 
-puts h
+novoVetor = Vetor.new
+
+puts "Digite o tamanho do vetor:\n"
+tamanhoVetor = gets.chomp.to_i
+
+novoVetor.novoVetor(tamanhoVetor)

@@ -1,11 +1,14 @@
-#01
+=begin 01-Escreva um programa para receber um nome pelo teclado, converter para
+maiúsculas e imprimir as 2 primeiras letras do nome.
+=end
 puts "Digite uma palavra:"
 palavra = gets.chomp
 palavra.upcase!
 puts "A duas primeiras letras da palavra #{palavra} em maiúscula são #{palavra[0..1]}"
 puts "------------------------"
 
-#02
+=begin 02-Escreva um programa que informe se uma string é palíndromo.
+=end
 palavras = { 1 => "Rodador", 2 => "A lupa pula", 3 => "A miss é péssima", 4 => "Ato idiota", 5 => "A sacada da casa", 6 => "A TAM mata", 7 => "Socorram-me, subi no ônibus em marrocos"}
 
 palavras.each do |k, pl|
@@ -20,7 +23,10 @@ palavras.each do |k, pl|
 end
 puts "------------------------"
 
-#03
+=begin 03-Escreva um programa que traduza uma frase de português para o idioma
+PigLatin. Para realizar a tradução, basta remover as vogais das palavras
+em português. Por exemplo, “Olá Mundo” ficaria l mnd em Pig Latin.
+=end
 puts "Digite uma frase para ser traduzida em Pig Latin:"
 frase = gets.chomp
 frase2 = frase.delete "aeiouAEIOU"

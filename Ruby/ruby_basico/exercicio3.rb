@@ -1,17 +1,25 @@
-class IndiqueMaior
-  def maior(num1, num2)
-    if num1 > num2
-      puts "O #{num1} é maior que o #{num2}.\n"
-    else
-      puts "O #{num2} é maior que o #{num1}.\n"
-    end
+class Cachorro
+  attr_accessor :nome
+  attr_reader :raca
+
+  def initialize(nome, raca)
+    @nome = nome
+    @raca = raca
+  end
+
+  def latir(texto = "Au au!")
+    texto
   end
 end
 
-maior = IndiqueMaior.new
-puts "Digite um numero:\n"
-numero1 = gets.chomp.to_i
-puts "Digite outro numero:\n"
-numero2 = gets.chomp.to_i
+cachorro1 = Cachorro.new("Alvin", "pastor-alemão")
+cachorro2 = Cachorro.new("Thor", "poodle")
 
-maior.maior(numero1,numero2)
+
+puts cachorro1.nome
+puts cachorro1.raca
+puts cachorro1.latir
+
+puts cachorro2.nome
+puts cachorro2.raca
+puts cachorro2.latir("Au!")
