@@ -1,5 +1,4 @@
-=begin 01-Leia uma matriz 4x4, imprima a matriz e retorne a localização (linha e a coluna) do maior valor.
-=end
+#01-Leia uma matriz 4x4, imprima a matriz e retorne a localização (linha e a coluna) do maior valor.
 m = [[1,0,2,3], [4,0,5,6], [0,0,9,0], [0,7,8,0]]
 maior = 0
 linha = 0
@@ -27,8 +26,7 @@ end
 puts "O maior valor da matriz é #{maior} e está localizado na linha #{linha} e coluna #{coluna}."
 puts "--------------"
 
-=begin 02-Declare uma matriz 5x5. Preencha com 1 a diagonal principal e com 0 os demais elementos. Escreva ao final a matriz obtida.
-=end
+#02-Declare uma matriz 5x5. Preencha com 1 a diagonal principal e com 0 os demais elementos. Escreva ao final a matriz obtida.
 m = [[],[],[],[],[]]
 
 (0..4).each do |i|
@@ -49,8 +47,7 @@ end
 end
 puts "--------------"
 
-=begin 03/04-Calcular a soma dos elementos de uma matriz numérica quadrada qualquer dada que estão acima da diagonal principal.
-=end
+#03/04-Calcular a soma dos elementos de uma matriz numérica quadrada qualquer dada que estão acima da diagonal principal.
 m = [[1,0,2,3], [4,0,5,6], [0,0,9,0], [0,7,8,0]]
 soma = 0
 
@@ -72,8 +69,7 @@ end
 puts "A soma elementos acima da diagonal principal da matriz é #{soma}."
 puts "--------------"
 
-=begin 05-Dada uma matriz A mxn , imprimir o número de linhas e o número de colunas nulas da matriz.
-=end
+#05-Dada uma matriz A mxn , imprimir o número de linhas e o número de colunas nulas da matriz.
 m = [[1,0,2,3], [4,0,5,6], [0,0,0,0], [0,0,0,0]]
 linha = 0
 coluna = 0
@@ -112,8 +108,7 @@ end
 puts "O número de linhas nulas é #{linha} e o número de colunas nulas é #{coluna}."
 puts "--------------"
 
-=begin 06-Dizemos que uma matriz quadrada inteira é um quadrado mágico se a soma dos elementos de cada linha, a soma dos elementos de cada coluna e a soma dos elementos das diagonais principal e secundária são todas iguais.
-=end
+#06-Dizemos que uma matriz quadrada inteira é um quadrado mágico se a soma dos elementos de cada linha, a soma dos elementos de cada coluna e a soma dos elementos das diagonais principal e secundária são todas iguais.
 m = [[8, 0, 7], [4, 5, 6], [3, 10, 2]]
 diagonal_principal = 0
 diagonal_secundaria = 0
@@ -163,8 +158,7 @@ if diagonal_principal == diagonal_secundaria && linha && coluna
 end
 puts "--------------"
 
-=begin 07-Gere um array unidimensional pela soma dos números de cada coluna de uma matriz 3x3 e mostre na tela esse vetor.
-=end
+#07-Gere um array unidimensional pela soma dos números de cada coluna de uma matriz 3x3 e mostre na tela esse vetor.
 m = [[5, -8, 10], [1, 2, 15], [25, 10, 7]]
 v = []
 

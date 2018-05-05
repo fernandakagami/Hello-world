@@ -1,5 +1,4 @@
-=begin 01-Implemente um algoritmo que leia o vetor A inteiro de 10 elementos. Calcule e exiba o vetor B, sendo B = 2A.
-=end
+#01-Implemente um algoritmo que leia o vetor A inteiro de 10 elementos. Calcule e exiba o vetor B, sendo B = 2A.
 veta = [1,2,3,4,5,6,7,8,9,10]
 vetb = Array.new
 veta.each do |x|
@@ -21,8 +20,7 @@ vetor.insert(4, 100)
 puts vetor
 puts "---------------------\n"
 
-=begin 03-Ler 2 vetores: R de 5 elementos e S de 10 elementos. Gere um vetor X de 15 elementos cuja as 5 primeiras posições contenham os elementos de R e as 10 últimas posições os elementos de S. Escrever o vetor X.
-=end
+#03-Ler 2 vetores: R de 5 elementos e S de 10 elementos. Gere um vetor X de 15 elementos cuja as 5 primeiras posições contenham os elementos de R e as 10 últimas posições os elementos de S. Escrever o vetor X.
 r = [1,2,3,4,5]
 s = ["maça", "abacaxi", "jabuticaba", "banana", "melão", "melancia", "mamão", "jaca", "limão", "acerola"]
 x = Array.new
@@ -31,15 +29,13 @@ x.push(s)
 puts x
 puts "---------------------\n"
 
-=begin 04-Ler um vetor U de 10 elementos. Troque o 1o elemento com o último, o 2o com o penúltimo, etc. até o 5o com o 6o, e escreva o vetor U assim modificado.
-=end
+#04-Ler um vetor U de 10 elementos. Troque o 1o elemento com o último, o 2o com o penúltimo, etc. até o 5o com o 6o, e escreva o vetor U assim modificado.
 u = ["maça", "abacaxi", "jabuticaba", "banana", "melão", "melancia", "mamão", "jaca", "limão", "acerola"]
 u.reverse!
 puts u
 puts "---------------------\n"
 
-=begin 05-Uma empresa de desenvolvimento de software possui uma política diferenciada na definição dos salários de seus funcionários. Todos têm o mesmo salário base de 2000 reais e é acrescentado 300 reais a cada ano de trabalho na empresa. Faça um programa que calcule o salário de cada funcionário a partir da entrada da informação sobre os anos trabalhados na empresa. Os salários precisam ser armazenados em um vetor a medida em que são calculados. Quando todos os salários forem calculados, mostrar os salários ordenados de forma decrescente. Não é preciso apresentar nesta lista os funcionários detentores de cada salário.
-=end
+#05-Uma empresa de desenvolvimento de software possui uma política diferenciada na definição dos salários de seus funcionários. Todos têm o mesmo salário base de 2000 reais e é acrescentado 300 reais a cada ano de trabalho na empresa. Faça um programa que calcule o salário de cada funcionário a partir da entrada da informação sobre os anos trabalhados na empresa. Os salários precisam ser armazenados em um vetor a medida em que são calculados. Quando todos os salários forem calculados, mostrar os salários ordenados de forma decrescente. Não é preciso apresentar nesta lista os funcionários detentores de cada salário.
 vetor = Array.new
 3.times do |i|
   puts "Insira a quantidade de anos trabalhados na empresa:"
@@ -55,8 +51,7 @@ puts "Ordenando os salário de forma decrescente:"
 puts vetor
 puts "---------------------\n"
 
-=begin 06-Leia um vetor com 10 números inteiros. Escreva os elementos do vetor eliminando elementos repetidos.
-=end
+#06-Leia um vetor com 10 números inteiros. Escreva os elementos do vetor eliminando elementos repetidos.
 vetor = [1,2,2,1,2,1,2,1,2,2]
 vetor.uniq!
 puts vetor
@@ -98,8 +93,7 @@ semana.each do |dia,ids|
 end
 puts "---------------------\n"
 
-=begin 08- Construa um algoritmo que leia um cartão da Mega Sena e armazene-o em um vetor. Em seguida, preencha outro vetor com seis dezenas sorteadas. Apresente estas dezenas e diga se houve: quadra, quina ou sena.
-=end
+#08- Construa um algoritmo que leia um cartão da Mega Sena e armazene-o em um vetor. Em seguida, preencha outro vetor com seis dezenas sorteadas. Apresente estas dezenas e diga se houve: quadra, quina ou sena.
 cartao = Array.new
 sorteadas = Array.new
 6.times do |i|
@@ -127,8 +121,7 @@ else
 end
 puts "------------------"
 
-=begin 09-Criar um algoritmo que leia vários números inteiros positivos. A leitura se encerra quando houver um número negativo ou quando o vetor ficar completo. Sabe-se que o vetor pode possuir no máximo 10 elementos. Gerar e apresentar um novo vetor em que cada elemento é o oposto do correspondente no vetor original.
-=end
+#09-Criar um algoritmo que leia vários números inteiros positivos. A leitura se encerra quando houver um número negativo ou quando o vetor ficar completo. Sabe-se que o vetor pode possuir no máximo 10 elementos. Gerar e apresentar um novo vetor em que cada elemento é o oposto do correspondente no vetor original.
 vetor = Array.new
 i = 0
 begin
@@ -150,8 +143,7 @@ puts "O tamanho do vetor é #{vetor.length}."
 puts "O inverso do vetor é #{new_vetor}."
 puts "------------------"
 
-=begin 10-Faça um programa que leia um vetor de 5 posições para números reais e, depois, um código inteiro. Se o código for zero, finalize o programa; se for 1, mostre o vetor na ordem direta; se for 2, mostre o vetor na ordem inversa. Caso, o código for diferente de 1 e 2 escreva uma mensagem informando que o código é inválido.
-=end
+#10-Faça um programa que leia um vetor de 5 posições para números reais e, depois, um código inteiro. Se o código for zero, finalize o programa; se for 1, mostre o vetor na ordem direta; se for 2, mostre o vetor na ordem inversa. Caso, o código for diferente de 1 e 2 escreva uma mensagem informando que o código é inválido.
 vetor = Array.new
 i = 0
 begin
@@ -180,8 +172,7 @@ else
 end
 puts "------------------"
 
-=begin 11-12-Em uma festa universitária composta por N estudantes, cada estudante que ingressa na festa ganha um copo de suco natural da sua escolha. Há quatro opções de sabores de suco: 1 - Laranja, 2 - Uva, 3 - Morango e 4 - Maça. Faça um programa para o administrador da festa controlar a quantidade de sucos entregues aos estudantes. Para isso, se faz necessário guardar em um vetor a quantidade de cada sabor distribuído. No final da festa, o administrador vai inserir o valor 666 e então deve ser apresentado um extrato contendo a quantidade total de cada sabor entregue e o total de sucos entregues.
-=end
+#11-12-Em uma festa universitária composta por N estudantes, cada estudante que ingressa na festa ganha um copo de suco natural da sua escolha. Há quatro opções de sabores de suco: 1 - Laranja, 2 - Uva, 3 - Morango e 4 - Maça. Faça um programa para o administrador da festa controlar a quantidade de sucos entregues aos estudantes. Para isso, se faz necessário guardar em um vetor a quantidade de cada sabor distribuído. No final da festa, o administrador vai inserir o valor 666 e então deve ser apresentado um extrato contendo a quantidade total de cada sabor entregue e o total de sucos entregues.
 suco = { "laranja" => 0, "uva" => 0, "morango" => 0, "maca" => 0}
 
 begin
@@ -214,8 +205,7 @@ end
 puts "No total foram entregues #{soma}."
 puts "------------------"
 
-=begin 13-Criar um algoritmo que leia os vetores A, B e C. Então, calcule e exiba o vetor D.
-=end
+#13-Criar um algoritmo que leia os vetores A, B e C. Então, calcule e exiba o vetor D.
 a = [7, 4, 9, 3, 6]
 b = ["+", "-", "/", "*", "/"]
 c = [1, 3, 3, 2, 6]

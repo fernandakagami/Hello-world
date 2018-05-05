@@ -1,6 +1,4 @@
-=begin 01_1 Leia o número de habitantes de uma determinada cidade. O usuário digitará no mínimo 1. Para cada habitante, leia o nome e o consumo de energia elétrica. Imprima o nome o consumo do habitante que mais e que menos consome. Também imprima a média de consumo da
-cidade.
-=end
+#01_1 Leia o número de habitantes de uma determinada cidade. O usuário digitará no mínimo 1. Para cada habitante, leia o nome e o consumo de energia elétrica. Imprima o nome o consumo do habitante que mais e que menos consome. Também imprima a média de consumo da cidade.
 cidade = {}
 
 consumo_cidade = 0
@@ -39,8 +37,7 @@ puts "O habitante que mais consumiu energia foi #{maior_consumo_nome} com consum
 puts "O habitante que menos consumiu energia foi #{menor_consumo_nome} com consumo de #{menor_consumo_energia}."
 puts "A média de consumo da cidade foi #{consumo_cidade/habitante}."
 
-=begin 02_1 Leia uma string. Descubra quais são os dois caracteres que mais se repetem. Imprima a string sem esses caracteres.
-=end
+#02_1 Leia uma string. Descubra quais são os dois caracteres que mais se repetem. Imprima a string sem esses caracteres.
 string = "hellooo"
 letra = string.split(//)
 
@@ -74,8 +71,7 @@ end
 puts string = letra.join
 puts hashLetra
 
-=begin 03_1 Leia uma string de 16 caracteres. Transforme a string numa matriz 4x4 (os 4 primeiros caracteres devem ser a primeira linha da matriz). Imprima na tela quantas colunas da matriz possuem apenas caracteres numéricos (de 0 a 9).
-=end
+#03_1 Leia uma string de 16 caracteres. Transforme a string numa matriz 4x4 (os 4 primeiros caracteres devem ser a primeira linha da matriz). Imprima na tela quantas colunas da matriz possuem apenas caracteres numéricos (de 0 a 9).
 string = "1abc2fg52jln1256"
 string = string.split(//)
 def numeric?(lookAhead)
@@ -115,8 +111,7 @@ end
 
 puts "A matriz tem #{coluna_matriz} colunas com apenas caracteres numéricos."
 
-=begin 04_1 Leia um inteiro. Ele será a quantidade de degraus da escada. Imprima uma escada com essa quantidade de degraus. Exemplo: se o usuário digitar 4.
-=end
+#04_1 Leia um inteiro. Ele será a quantidade de degraus da escada. Imprima uma escada com essa quantidade de degraus. Exemplo: se o usuário digitar 4.
 puts "Digite um numero inteiro:"
 numero = gets.chomp.to_i
 
@@ -139,8 +134,7 @@ end
   puts "\n"
 end
 
-=begin 01_2 Faça um programa que pergunte a cada um dos clientes da academia seu código, sua altura e seu peso. O final da digitação de dados deve ser dado quando o usuário digitar 0 (zero) no campo código. Ao encerrar o programa, imprima os códigos e valores do cliente mais alto, do mais baixo, do mais gordo e do mais magro.
-=end
+#01_2 Faça um programa que pergunte a cada um dos clientes da academia seu código, sua altura e seu peso. O final da digitação de dados deve ser dado quando o usuário digitar 0 (zero) no campo código. Ao encerrar o programa, imprima os códigos e valores do cliente mais alto, do mais baixo, do mais gordo e do mais magro.
 cliente = {}
 
 puts "Digite o código:"
@@ -193,8 +187,7 @@ puts "O cliente mais alto foi #{cliente['baixo']}."
 puts "O cliente mais alto foi #{cliente['gordo']}."
 puts "O cliente mais alto foi #{cliente['magro']}."
 
-=begin 02_2 Leia uma string. O usuário somente digitará caracteres minúsculos. Verifique se todas as letras da string estão cercadas por números. Informe ao usuário o resultado. Ex: “h3-54b24” não está, por causa do ‘h’. Ex: “+23s48-9r3” está com todas as letras cercadas por números.
-=end
+#02_2 Leia uma string. O usuário somente digitará caracteres minúsculos. Verifique se todas as letras da string estão cercadas por números. Informe ao usuário o resultado. Ex: “h3-54b24” não está, por causa do ‘h’. Ex: “+23s48-9r3” está com todas as letras cercadas por números.
 puts "Digite uma palavra:"
 string = gets.chomp
 letra = string.split(//)
@@ -226,9 +219,7 @@ else
     puts "Nem todas as letras das string estão cercadas por números."
 end
 
-
-=begin 03_2 Leia uma string de 16 caracteres numéricos. Transforme a string numa matriz 4x4 de inteiros (os 4 primeiros caracteres devem ser a primeira linha da matriz). Calcule a soma de cada coluna e imprima somente a maior soma.
-=end
+#03_2 Leia uma string de 16 caracteres numéricos. Transforme a string numa matriz 4x4 de inteiros (os 4 primeiros caracteres devem ser a primeira linha da matriz). Calcule a soma de cada coluna e imprima somente a maior soma.
 puts "Digite um numeral de 16 caracteres:"
 numero = gets.chomp
 numero = numero.split(//)
@@ -265,9 +256,7 @@ end
 
 puts maiorSoma
 
-
-=begin 04_2 Leia 9 números e guarde-os numa matriz 3x3. Imprima: (soma da diagonal principal) menos a (soma da diagonal secundaria).
-=end
+#04_2 Leia 9 números e guarde-os numa matriz 3x3. Imprima: (soma da diagonal principal) menos a (soma da diagonal secundaria).
 puts "Digite 9 números:"
 numero = gets.chomp
 numero = numero.split(//)

@@ -1,5 +1,4 @@
-=begin 01-Peça números para o usuário até ele digitar o número 0. Imprima todos os números.
-=end
+#01-Peça números para o usuário até ele digitar o número 0. Imprima todos os números.
 i = 0
 v = []
 
@@ -19,8 +18,7 @@ while i >= 0
   i -= 1
 end
 
-=begin 02-Leia do usuário as seguintes informações: nome, idade e telefone. Armazene as informações num hash (dicionário). Imprima as informações do usuário.
-=end
+#02-Leia do usuário as seguintes informações: nome, idade e telefone. Armazene as informações num hash (dicionário). Imprima as informações do usuário.
 h = {}
 puts "Digite um nome:\n"
 h.merge! ({:nome => gets.chomp})
@@ -31,8 +29,7 @@ h.merge! ({:telefone => gets.chomp})
 
 puts h
 
-=begin 03-Peça 2 números para o usuário e imprima o maior.
-=end
+#03-Peça 2 números para o usuário e imprima o maior.
 class IndiqueMaior
   def maior(num1, num2)
     if num1 > num2
