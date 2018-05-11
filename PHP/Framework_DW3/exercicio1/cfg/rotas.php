@@ -6,6 +6,6 @@ $rotas = [
     ],
 
     '/formulario' => [
-        'GET' => '\Controlador\AppControlador#formulario'
-    ]
+        'GET' => '\Controlador\AppControlador#formulario',
+    ],
 ];

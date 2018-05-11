@@ -1,3 +1,5 @@
-# web3
+# Framework DW3
 
-Framework usado para ensinar PHP na universidade.
+Framework usado para ensinar PHP.
+
+- https://github.com/guilhermedacsilva/web3
