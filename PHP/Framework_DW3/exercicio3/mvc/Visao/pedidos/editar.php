@@ -10,10 +10,10 @@
         <br>
         <div class="form-group">
             Tipo do lanche:
-            <select id="lanches_id" name="id_lanches" class="form-control campo-form">
-              <?php
-                echo '<option value="'.$reg["id_lanches"].'">'.$reg["nome"].'</option>';
-              ?>
+            <select id="lanches_id" name="lanche" class="form-control campo-form">
+              <?php foreach ($lanches as $lanche) : ?>
+                <option value="<?= $lanche->getId() ?>"><?= $lanche->getNome() ?></option>
+              <?php endforeach ?>
             </select>
         </div>
         <br>

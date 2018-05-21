@@ -10,7 +10,7 @@
         <br>
         <div class="form-group">
             Tipo do lanche:
-            <select id="lanches_id" name="lanches_id" class="form-control campo-form">
+            <select id="lanches_id" name="lanche" class="form-control campo-form">
               <?php foreach ($lanches as $lanche) : ?>
                 <option value="<?= $lanche->getId() ?>"><?= $lanche->getNome() ?></option>
               <?php endforeach ?>

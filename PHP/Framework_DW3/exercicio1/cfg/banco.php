@@ -5,6 +5,6 @@ $banco = [
     'servidor' => 'localhost',
     'porta' => '3306',
     'banco' => 'exercicio1',
-    'usuario' => '###',
-    'senha' => '###',
+    'usuario' => 'root',
+    'senha' => '',
 ];

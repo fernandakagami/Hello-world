@@ -14,21 +14,22 @@
             </tr>
         <?php endif ?>
         <?php foreach ($lanches as $lanche) : ?>
-            <tr>
-                <td>
-                    <a href="<?= URL_RAIZ . 'lanches/' . $lanche->getId() . '/editar' ?>" class="btn btn-primary btn-xs" title="Editar">
-                        <span class="glyphicon glyphicon-pencil"></span>
-                    </a>
+          <tr>
+              <td>
+                  <a href="<?= URL_RAIZ . '/lanches' . $lanche->getId() ?>" class="btn btn-default btn-xs" title="Editar">
+                      <span class="glyphicon glyphicon-eye-open"></span>
+                  </a>
 
-                    <form action="<?= URL_RAIZ . 'lanches/' . $lanche->getId() ?>" method="post" class="inline">
-                        <input type="hidden" name="_metodo" value="DELETE">
-                        <a href="" class="btn btn-danger btn-xs" title="Deletar" onclick="event.preventDefault(); this.parentNode.submit()">
-                            <span class="glyphicon glyphicon-trash"></span>
-                        </a>
-                    </form>
-                </td>
-                <td><?= $lanche->getNome() ?></td>                
-            </tr>
+                  <form action="<?= URL_RAIZ . '/lanches' . $lanche->getId() ?>" method="post" class="inline">
+                      <input type="hidden" name="_metodo" value="DELETE">
+                      <a href="" class="btn btn-danger btn-xs" title="Deletar" onclick="event.preventDefault(); this.parentNode.submit()">
+                          <span class="glyphicon glyphicon-trash"></span>
+                      </a>
+                  </form>
+              </td>
+
+              <td><?= $reclamacao->getNome() ?></td>
+          </tr>
         <?php endforeach ?>
     </table>
 </div>

@@ -3,6 +3,7 @@ namespace Modelo;
 
 use \PDO;
 use \Framework\DW3BancoDeDados;
+use \Modelo\Pedido;
 
 class Lanche extends Modelo
 {
@@ -16,10 +17,12 @@ class Lanche extends Modelo
 
   public function __construct(
       $nome = null,
-      $id = null
+      $id = null,
+      $lanche_id = null,
   ) {
       $this->id = $id;
       $this->nome = $nome;
+      $this->lanche_id = $lanche_id;
   }
 
   public function getId()
@@ -30,6 +33,12 @@ class Lanche extends Modelo
   public function getNome()
   {
       return $this->nome;
+  }
+
+  public function getLancheID()
+  {
+      $this->lanche_id = Pedido::buscarId($this->id);
+      return $this->lanche_id;
   }
 
   public function setNome($nome)
@@ -60,7 +69,7 @@ class Lanche extends Modelo
   {
       $comando = DW3BancoDeDados::prepare(self::ATUALIZAR);
       $comando->bindParam(1, $this->nome, PDO::PARAM_STR, 255);
-      $comando->bindParam(3, $this->id, PDO::PARAM_INT);
+      $comando->bindParam(2, $this->id, PDO::PARAM_INT);
       $comando->execute();
   }
 
@@ -77,10 +86,10 @@ class Lanche extends Modelo
       return $objetos;
   }
 
-  public static function buscarId($id)
+  public static function buscarNome($nome)
   {
-      $comando = DW3BancoDeDados::prepare(self::BUSCAR_ID);
-      $comando->bindParam(1, $id, PDO::PARAM_INT);
+      $comando = DW3BancoDeDados::prepare(self::BUSCAR_NOME);
+      $comando->bindParam(1, $nome, PDO::PARAM_INT);
       $comando->execute();
       $registro = $comando->fetch();
       return new Lanche(

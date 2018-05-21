@@ -22,16 +22,16 @@
                         <span class="glyphicon glyphicon-pencil"></span>
                     </a>
 
-                    <form action="<?= URL_RAIZ . 'pedidos/' . $contato->getId() ?>" method="post" class="inline">
+                    <form action="<?= URL_RAIZ . 'pedidos/' . $pedido->getId() ?>" method="post" class="inline">
                         <input type="hidden" name="_metodo" value="DELETE">
                         <a href="" class="btn btn-danger btn-xs" title="Deletar" onclick="event.preventDefault(); this.parentNode.submit()">
                             <span class="glyphicon glyphicon-trash"></span>
                         </a>
                     </form>
                 </td>
-                <td><?= $contato->getMesa() ?></td>
-                <td><?= $contato->getLanche() ?></td>
-                <td><?= $contato->getQuantidade() ?></td>
+                <td><?= $pedido->getMesa() ?></td>
+                <td><?= $pedido->getLanche()->getNome() ?></td>
+                <td><?= $pedido->getQuantidade() ?></td>
             </tr>
         <?php endforeach ?>
     </table>

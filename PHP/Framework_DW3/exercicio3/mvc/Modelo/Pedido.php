@@ -10,7 +10,7 @@ class Pedido extends Modelo
   const BUSCAR_TODOS = 'SELECT * FROM pedidos ORDER BY id';
   const BUSCAR_ID = 'SELECT * FROM pedidos WHERE id = ?';
   const INSERIR = 'INSERT INTO pedidos(mesa, quantidade, lanche_id) VALUES ( ?, ?, ?)';
-  const ATUALIZAR = 'UPDATE pedidos SET mesa = ?, quantidade = ?, lanche_id = ? WHERE id = ?';
+  const ATUALIZAR = 'UPDATE pedidos SET mesa = ?, quantidade = ? WHERE id = ?';
   const DELETAR = 'DELETE FROM pedidos WHERE id = ?';
   private $id;
   private $quantidade;
@@ -20,12 +20,10 @@ class Pedido extends Modelo
   public function __construct(
     $mesa = null,
     $quantidade = null,
-    $lanche_id = null,
     $id = null
   ) {
     $this->mesa = $mesa;
     $this->quantidade = $quantidade;
-    $this->lanche_id = $lanche_id;
     $this->id = $id;
   }
 
@@ -44,9 +42,10 @@ class Pedido extends Modelo
     return $this->mesa;
   }
 
-  public function getLancheId()
+  public function getLanche()
   {
-    return $this->lanche_id;
+    $this->lanche = Lanche::buscarNome($this->nome);
+    return $this->lanche;
   }
 
   public function setQuantidade($quantidade)
@@ -59,12 +58,7 @@ class Pedido extends Modelo
     $this->mesa = $mesa;
   }
 
-  public function setLancheId($lanche_id)
-  {
-    $this->lanche_id = $lanche_id;
-  }
-
-    public function salvar()
+  public function salvar()
   {
       if ($this->id == null) {
           $this->inserir();
@@ -102,8 +96,7 @@ class Pedido extends Modelo
       foreach ($registros as $registro) {
           $objetos[] = new Pedido(
               $registro['mesa'],
-              $registro['quantidade'],
-              $registro['lanche_id'],
+              $registro['quantidade']
           );
       }
       return $objetos;
@@ -118,7 +111,7 @@ class Pedido extends Modelo
       return new Pedido(
           $registro['mesa'],
           $registro['quantidade'],
-          $registro['lanche_id'],
+          $registro['id']
       );
   }
 

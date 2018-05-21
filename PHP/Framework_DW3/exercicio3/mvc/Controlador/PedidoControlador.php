@@ -14,6 +14,11 @@ class PedidoControlador extends Controlador
       ]);
     }
 
+    public function criar()
+    {
+        $this->visao('pedidos/criar.php');
+    }
+
     public function armazenar()
     {
         $pedido = new Pedido($_POST['mesa'], $_POST['quantidade'], $_POST['lanche_id']);
@@ -21,16 +26,11 @@ class PedidoControlador extends Controlador
         $this->redirecionar(URL_RAIZ. 'pedidos');
     }
 
-    public function criar()
-    {
-        $this->visao('pedidos/criar.php');
-    }
-
     public function editar($id)
     {
         $pedido = Pedido::buscarId($id);
-        $this->visao('contatos/editar.php', [
-            'contato' => $contato
+        $this->visao('pedido/editar.php', [
+            'pedido' => $pedido
         ]);
     }
 

@@ -5,10 +5,6 @@ $rotas = [
         'GET' => '\Controlador\PedidoControlador#index',
     ],
     // REST
-    '/pedidos' => [
-        'GET' => '\Controlador\PedidoControlador#mostrar',
-    ],
-    // REST
     '/pedidos/?' => [
         'PATCH' => '\Controlador\PedidoControlador#atualizar',
         'DELETE' => '\Controlador\PedidoControlador#destruir',
@@ -29,15 +25,10 @@ $rotas = [
     ],
     // REST
     '/lanches/?' => [
-        'PATCH' => '\Controlador\LancheControlador#atualizar',
         'DELETE' => '\Controlador\LancheControlador#destruir',
     ],
     // NÃO INCLUSO NO REST
     '/lanches/criar' => [
         'GET' => '\Controlador\LancheControlador#criar',
-    ],
-    // NÃO INCLUSO NO REST
-    '/lanches/?/editar' => [
-        'GET' => '\Controlador\LancheControlador#editar',
     ],
 ];

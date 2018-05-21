@@ -13,30 +13,14 @@ class LancheControlador extends Controlador
       ]);
     }
 
-    public function armazenar()
-    {
-        $lanche = new Lanche($_POST['nome']);
-        $lanche->salvar();
-        $this->redirecionar(URL_RAIZ . 'lanches');
-    }
-
     public function criar()
     {
         $this->visao('lanches/criar.php');
     }
 
-    public function editar($id)
+    public function armazenar()
     {
-        $lanche = Lanche::buscarId($id);
-        $this->visao('lanches/editar.php', [
-            'lanche' => $lanche
-        ]);
-    }
-
-    public function atualizar($id)
-    {
-        $lanche = Lanche::buscarId($id);
-        $lanche->setNome($_POST['nome']);
+        $lanche = new Lanche($_POST['nome']);
         $lanche->salvar();
         $this->redirecionar(URL_RAIZ . 'lanches');
     }
