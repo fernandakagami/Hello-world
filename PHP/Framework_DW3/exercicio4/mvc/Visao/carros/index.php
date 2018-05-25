@@ -1,8 +1,7 @@
 <div class="container">
   <h1 class="text-center">Classificados de Automóveis</h1>
   <nav>
-    <a href="<?= URL_RAIZ . 'carros/relatorio' ?>">Relatório de Lucro</a>
-    <br>
+    <a href="<?= URL_RAIZ . 'carros/relatorio' ?>" class="btn btn-primary">Relatório de Lucro</a>  
     <a href="<?= URL_RAIZ . 'carros/criar' ?>" class="btn btn-primary">Cadastrar novo veículo</a>
   </nav>
   <table class="table">
@@ -45,9 +44,12 @@
                 <?php if ($carro->getVendido()) : ?>
                   Vendido
                 <?php else : ?>
-                  <nav>
-                    <a href="<?= URL_RAIZ . 'carros/' . $carro->getId() . '/vender'?>" class="btn btn-primary btn-sm">Marcar como Vendido</a>
-                  </nav>
+                  <form action="<?= URL_RAIZ . 'carros/' . $carro->getId() . '/vender' ?>" method="post" class="inline">
+                      <input type="hidden" name="_metodo" value="PATCH">
+                      <a href="" class="btn btn-primary btn-sm" title="Vender" onclick="event.preventDefault(); this.parentNode.submit()">
+                        Marcar como Vendido
+                      </a>
+                  </form>
                 <?php endif ?>
               </td>
           </tr>

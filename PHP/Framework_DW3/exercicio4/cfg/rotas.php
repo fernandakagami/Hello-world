@@ -25,7 +25,7 @@ $rotas = [
     ],
     // NÃO INCLUSO NO REST
     '/carros/?/vender' => [
-        'GET' => '\Controlador\CarroControlador#vender',
+        'PATCH' => '\Controlador\CarroControlador#vender',
     ],
     // NÃO INCLUSO NO REST
     '/carros/relatorio' => [
