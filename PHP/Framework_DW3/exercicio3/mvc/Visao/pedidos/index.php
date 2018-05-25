@@ -1,6 +1,7 @@
 <div class="center-block site">
   <h1 class="text-center">Listagem dos Pedidos</h1>
   <nav>
+    <a href="<?= URL_RAIZ . 'lanches' ?>" class="btn btn-primary">Ir para a Relação de Lanches</a>
     <a href="<?= URL_RAIZ . 'pedidos/criar' ?>" class="btn btn-primary">Cadastrar novo pedido</a>
   </nav>
   <table class="table">
