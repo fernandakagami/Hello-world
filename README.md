@@ -1,2 +1,6 @@
 # Hello-world
-Learning how to program: logic programming and applications
+Learning how to program:
+
+-logic programming
+-learning PHP
+-learning Ruby
